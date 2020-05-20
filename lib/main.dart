@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 
 void main() {
   runApp(MiCard());
@@ -14,41 +13,30 @@ class MiCard extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
-                height: 100,
-                width: 100,
-                color: Colors.black,
-                child: Text(
-                  "Black",
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              Container(
-                height: 100,
                 width: 100,
                 color: Colors.red,
-                child: Text(
-                  "Red",
-                  textAlign: TextAlign.center,
-                ),
               ),
-              SizedBox(
-                width: 10,
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.green,
+                  ),
+                ],
               ),
               Container(
-                height: 100,
                 width: 100,
-                color: Colors.green,
-                child: Text(
-                  "Green",
-                  textAlign: TextAlign.center,
-                ),
+                color: Colors.blue,
               ),
             ],
           ),
