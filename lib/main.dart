@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -16,14 +18,25 @@ class MiCard extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage("images/profile.jpeg"),
+                backgroundImage: AssetImage('images/profile.jpeg'),
               ),
               Text(
-                "Jeremiah Polo",
+                'Jeremiah Polo',
                 style: TextStyle(
+                    fontFamily: 'Pacifico',
                     fontSize: 30.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
+              ),
+              Text(
+                'ANDROID AND FLUTTER DEVELOPER',
+                style: TextStyle(
+                    letterSpacing: 2.5,
+                    fontSize: 28.0,
+                    fontFamily: 'SourceSansPro',
+                    fontWeight: FontWeight.bold,
+                    color: Colors.teal.shade100),
+                textAlign: TextAlign.center,
               ),
             ],
           ),
